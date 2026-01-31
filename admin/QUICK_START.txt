@@ -1,0 +1,54 @@
+==================================================================
+  QUICK START - Access Your Website Now
+==================================================================
+
+✅ Apache is running (port 80)
+✅ MySQL is running (port 3306)
+
+NOW DO THIS:
+==================================================================
+
+1. SETUP DATABASE (One-time setup):
+   Open browser → http://localhost/phpmyadmin
+   - Click "Import" tab
+   - Choose file: sql/schema.sql
+   - Click "Go"
+
+2. ACCESS YOUR WEBSITE:
+
+   📱 MAIN SITE:
+   http://localhost/New%20Folder/
+   
+   🔧 ADMIN DASHBOARD:
+   http://localhost/New%20Folder/admin/
+   or
+   http://localhost/New%20Folder/admin/dashboard.php
+
+3. (Optional) Start Flask AI Service for AI matching:
+   
+   Open Command Prompt/PowerShell:
+   
+   cd "C:\xampp\htdocs\New Folder\flask-service"
+   python -m venv venv
+   venv\Scripts\activate
+   pip install -r requirements.txt
+   python -m spacy download en_core_web_sm
+   python app.py
+
+==================================================================
+   TROUBLESHOOTING
+==================================================================
+
+❌ "Failed to connect to MySQL"?
+   → Import the database schema (Step 1 above)
+
+❌ "404 Not Found"?
+   → Check folder name is exactly "New Folder"
+   → Try: http://localhost/New%20Folder/index.php
+
+❌ "Access Denied" or permission errors?
+   → Make sure Apache is running in XAMPP Control Panel
+
+==================================================================
+
+
